@@ -1,10 +1,19 @@
 function isPalindrome(word) {
   // Write your algorithm here
+  for(let i=0; i<word.length; i++){
+    if(word.charAt(i) != word.charAt(word.length-(i+1))){
+      console.log('false');
+      return false;
+    }
+  }
+  console.log('true');
+  return true;
 }
 
 /* 
   Add your pseudocode here
 */
+
 
 /*
   Add written explanation of your solution here
